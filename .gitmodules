@@ -1,0 +1,6 @@
+[submodule "js_frontend_for_flask_calendar"]
+	path = js_frontend_for_flask_calendar
+	url = https://github.com/IvanLapchenko/js_frontend_for_flask_calendar
+[submodule "app-calendar"]
+	path = app-calendar
+	url = https://github.com/IvanLapchenko/app-calendar

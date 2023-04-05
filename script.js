@@ -1,19 +1,19 @@
 window.onload = (event) => {
 
     const routes = [
-      { path: '/', handler: homeHandler },
-      { path: '/login.html', handler: loginHandler },
-      { path: '/signup.html', handler: signupHandler },
-      { path: '/index.html', handler: homeHandler },
+      { path: '/time-management-app/', handler: homeHandler },
+      { path: '/time-management-app/login.html', handler: loginHandler },
+      { path: '/time-management-app/signup.html', handler: signupHandler },
+      { path: '/time-management-app/index.html', handler: homeHandler },
     ];
-
+    const urlHost = "http://ilapchenko0.pythonanywhere.com/"
     handleRoutes()
 
 
 
     function loginHandler () {
         const loginForm = document.querySelector('#login-form');
-        const urlLogin = 'http://127.0.0.1:5000/login';
+        const urlLogin = `${urlHost}/login`;
 
         loginForm.addEventListener('submit', (event) => {
                 event.preventDefault();
@@ -29,7 +29,7 @@ window.onload = (event) => {
 
     function signupHandler () {
         const loginForm = document.querySelector('#signup-form');
-        const urlLogin = 'http://127.0.0.1:5000/signup';
+        const urlSignUp = `${urlHost}/signup`;
 
         loginForm.addEventListener('submit', (event) => {
                 event.preventDefault();
@@ -44,7 +44,7 @@ window.onload = (event) => {
     function homeHandler () {
         const logoutButton = document.querySelector('#logout');
         const eventForm = document.querySelector('#add-new-event');
-        const urlEvent = 'http://127.0.0.1:5000/create_event';
+        const urlEvent = `${urlHost}/create_event`;
 
         renderEventsForFiveDays();
 

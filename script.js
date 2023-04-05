@@ -21,7 +21,7 @@ window.onload = (event) => {
                 .then(data => {
                     localStorage.setItem('token', data.token);
                     if ( data.isLogged ) {
-                                location.replace('/index.html')
+                                location.replace('/time-management-app/index.html')
                     };
                 })
         })
@@ -36,7 +36,7 @@ window.onload = (event) => {
                 sendRequestToServer(event.target, urlLogin)
                 .then(data => {
                     if ( data.isAddedToDB ) {
-                                location.replace('/login.html')
+                                location.replace('/time-management-app/login.html')
                     };
         })
     })}

@@ -68,7 +68,7 @@ window.onload = (event) => {
 
     function logout () {
         localStorage.removeItem('token');
-        location.replace('/login.html');
+        location.replace('/time-management-app/login.html');
     }
 
 

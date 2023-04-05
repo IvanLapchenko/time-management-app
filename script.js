@@ -6,7 +6,7 @@ window.onload = (event) => {
       { path: '/time-management-app/signup.html', handler: signupHandler },
       { path: '/time-management-app/index.html', handler: homeHandler },
     ];
-    const urlHost = "http://ilapchenko0.pythonanywhere.com/"
+    const urlHost = "https://ilapchenko0.pythonanywhere.com/"
     handleRoutes()
 
 

@@ -28,12 +28,12 @@ window.onload = (event) => {
     }
 
     function signupHandler () {
-        const loginForm = document.querySelector('#signup-form');
+        const signupForm = document.querySelector('#signup-form');
         const urlSignUp = `${urlHost}/signup`;
 
-        loginForm.addEventListener('submit', (event) => {
+        signupForm.addEventListener('submit', (event) => {
                 event.preventDefault();
-                sendRequestToServer(event.target, urlLogin)
+                sendRequestToServer(event.target, urlSignUp)
                 .then(data => {
                     if ( data.isAddedToDB ) {
                                 location.replace('/time-management-app/login.html')
